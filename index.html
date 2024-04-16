@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Album :)</title>
+  <link rel="stylesheet" href="boostrap/css/bootstrap.min.css">
+  <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="icon/k-pop-rgb-color-icon-vector-removebg-preview (1).ico">
+ </head>
+
+ <body>
+   <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="inicio.html" id="item_inicio">Happy Album :)</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor04" aria-controls="navbarColor04" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor04">
+      <ul class="navbar-nav me-auto">
+        <!-- <li class="nav-item">
+          <a class="nav-link active">Inicio </a>
+        </li>
+     -->
+        <li class="nav-item">
+          
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-sm-2" type="search" placeholder="Search">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Búscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+   <div class="wrapper">
+     <aside id="sidebar">
+         <div class="d-flex">
+             <button class="toggle-btn" type="button">
+                 <i class="lni lni-grid-alt"></i>
+             </button>
+             <div class="sidebar-logo">
+                 <a href="#">Menú</a>
+             </div>
+         </div>
+         <ul class="sidebar-nav">
+             <li class="sidebar-item">
+                 <a href="perfil.html" class="sidebar-link" id="item_perfil">
+                     <i class="lni lni-user"></i>
+                     <span>Perfil</span>
+                 </a>
+             </li>
+             <li class="sidebar-item">
+                 <a href="formulario.html" class="sidebar-link" id="item_formulario">
+                     <i class="lni lni-agenda"></i>
+                     <span>Formulario</a></span>
+                 </a>
+             </li>
+             <li class="sidebar-item">
+                 <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                     data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
+                     <i class="lni lni-protection"></i>
+                     <span>Cuenta</span>
+                 </a>
+                 <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                     <li class="sidebar-item">
+                         <a href="inse.html" class="sidebar-link" id="item_inse">Iniciar sesion</a>
+                     </li>
+                     <li class="sidebar-item">
+                         <a href="register.html" class="sidebar-link" id="item_register">Registrarse</a>
+                     </li>
+                 </ul>
+             </li>
+            </li>
+            <li class="sidebar-item">
+              <a href="precio.html" class="sidebar-link" id="item_precio">
+                <i class="lni lni-layout"></i>
+                <span>Precio de Albums</span>
+              </a>
+            </li>
+             <!-- <li class="sidebar-item">
+                 <a href="#" class="sidebar-link">
+                     <i class="lni lni-popup"></i>
+                     <span>Comentarios</span>
+                 </a>
+             </li> -->
+    
+         </ul>
+         <div class="sidebar-footer">
+             <a href="#" class="sidebar-link">
+                 <i class="lni lni-exit"></i>
+                 <span>Logout</span>
+             </a>
+         </div>
+     </aside>
+
+     <div class="main p-3" id="container_contenido">
+ 
+     
+         <div class="row">
+             <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 py-4 bg-white">
+                 <h2>Formulario de Albums</h2>
+                 <form>
+                     <div class="mb-3">
+                         <label for="nombre" class="form-label">Nombre del Album</label>
+                         <input type="text" class="form-control" id="nombre" placeholder="Album" autofocus />
+                     </div>
+                     <div class="mb-3">
+                         <label for="descripcion" class="form-label">Descripción del Album</label>
+                         <textarea class="form-control" id="descripcion" placeholder="Descripción del Album" rows="3"></textarea>
+                     </div>
+                     <div class="mb-3">
+                         <label for="albumes" class="form-label">Número de Albums</label>
+                         <input type="number" class="form-control" id="albumes" />
+                     </div>
+                     <div class="d-grid gap-2">
+                         <button type="button" class="btn btn-outline-info">Guardar</button>
+                         <button class="btn btn-secondary">Limpiar</button>
+                     </div>
+                 </form>
+             </div>
+             <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 py-4 bg-white">
+                 <h2>Listado de cantidad de Albums</h2>
+                 <table class="table table-hover">
+                     <thead>
+                       <tr>
+                         <th class="centrado">#</th>
+                         <th class="centrado">Albums</th>
+                         <th class="centrado">Cantidad de Albums</th>
+                       </tr>
+                     </thead>
+                     <tbody>
+                 
+                       <tr class="table-secondary">
+                         <th class="centrado">1</th>
+                         <th class="centrado">FACE</th>
+                         <th class="centrado">21</th>
+                       </tr>
+                      
+                       <tr class="table-success">
+                         <th class="centrado">2</th>
+                         <th class="centrado">GOLDEN</th>
+                         <th class="centrado">110</th>                   
+                       </tr>
+                       
+                       <tr class="table-danger">
+                         <th class="centrado">3</th>
+                         <th class="centrado">IM NAYEON</th>
+                         <th class="centrado">45</th>
+                       </tr>
+                     
+                       <tr class="table-warning">
+                         <th class="centrado">4</th>
+                         <th class="centrado">FEEL SPECIAL</th>
+                         <th class="centrado">31</th>     
+                       </tr>
+
+                      
+                     </tbody>
+                   </table>
+             </div>
+         </div>
+     </div>
+     <script src="js/bootstrap.bundle.min.js"></script>
+     <script src="formulario.js"></script>
+     <script src="menu_alvarado.js"></script>
+     
+ </body>
+</html>
